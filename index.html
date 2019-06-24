@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    body {
+        margin:0;
+    }
+    .p {
+        background: #4a95ff;
+        height: 90px;
+        width: 100%;
+    }
+    .item1{
+    display: inline-block;
+        margin-top: 35px;
+        margin-left: 40px;
+        color: whitesmoke;
+        cursor: pointer;
+    }
+    .item2{
+    display: inline-block;
+        margin-left: 40px;
+        color: whitesmoke;
+        cursor: pointer;
+    }
+    .item3{
+    display: inline-block;
+        margin-left: 40px;
+        color: whitesmoke;
+        cursor: pointer;
+    }
+    .a {
+
+    }
+    .b {
+
+    }
+    .c {
+
+    }
+
+</style>
+<body>
+<div class="p">
+    <div class="item1" onclick="item1 ()">
+    ITEM 1
+    </div>
+    <div class="item2" onclick="item2 ()">
+    ITEM 2
+    </div>
+    <div class="item3" onclick="item3 ()">
+    ITEM 3
+    </div>
+</div>
+<div id="1" class="a"> ITEM 1</div>
+<div id="2" class="b"> ITEM 2</div>
+<div id="3" class="c"> ITEM 3</div>
+</body>
+<script>
+    i = true;
+    document.getElementById('1').style.display = 'none';
+    document.getElementById('2').style.display = 'none';
+    document.getElementById('3').style.display = 'none';
+    function item1() {
+        if (i == true){
+            document.getElementById('1').style.display = 'block';
+            document.getElementById('2').style.display = 'none';
+            document.getElementById('3').style.display = 'none';
+
+        }
+    }
+    function item2() {
+        if (i == true){
+            document.getElementById('2').style.display = 'block';
+            document.getElementById('1').style.display = 'none';
+            document.getElementById('3').style.display = 'none';
+
+        }
+    }
+    function item3() {
+        if (i == true){
+            document.getElementById('3').style.display = 'block';
+            document.getElementById('2').style.display = 'none';
+            document.getElementById('1').style.display = 'none';
+
+        }
+    }
+
+</script>
+</html>
